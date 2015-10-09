@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eax-r1-woL">
-                                <rect key="frame" x="282" y="265" width="35.5" height="17"/>
+                                <rect key="frame" x="267" y="271" width="66" height="31.5"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIo-A2-Sfh">
-                                <rect key="frame" x="245" y="125" width="110" height="110"/>
+                                <rect key="frame" x="225" y="105" width="150" height="150"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="8j3-qE-kGb"/>
-                                    <constraint firstAttribute="height" constant="110" id="yEP-SJ-Myo"/>
+                                    <constraint firstAttribute="width" constant="150" id="8j3-qE-kGb"/>
+                                    <constraint firstAttribute="height" constant="150" id="yEP-SJ-Myo"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvv-f2-do8">
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feN-KP-Ear">
-                                <rect key="frame" x="274" y="508" width="53" height="15"/>
+                                <rect key="frame" x="274" y="508" width="52.5" height="14.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,7 +54,7 @@
                         <animations/>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Eax-r1-woL" firstAttribute="top" secondItem="DIo-A2-Sfh" secondAttribute="bottom" constant="30" id="1jm-nV-CcI"/>
+                            <constraint firstItem="Eax-r1-woL" firstAttribute="top" secondItem="DIo-A2-Sfh" secondAttribute="bottom" constant="16" id="1jm-nV-CcI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hvv-f2-do8" secondAttribute="bottom" priority="999" constant="100" id="5kz-uu-kvy"/>
                             <constraint firstItem="DIo-A2-Sfh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FRL-hj-ZQA"/>
                             <constraint firstItem="feN-KP-Ear" firstAttribute="top" secondItem="hvv-f2-do8" secondAttribute="bottom" constant="8" id="Leo-BC-lae"/>
