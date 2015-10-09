@@ -20,6 +20,68 @@ public class CPU
     return copyAnswerFunction(Consts.hardwarePlatform) as String
   }
   
+  public class func getTypeDisplayName() -> (type: String?, manufacture: String?)
+  {
+    guard let identifier = getIdentifier()?.lowercaseString else
+    {
+      return (nil, nil)
+    }
+    
+    switch identifier
+    {
+    case "s8000":
+      return ("A9", "Samsung")
+      
+    case "s8003":
+      return ("A9", "TSMC")
+      
+    default:
+      break
+    }
+    
+    if (identifier.hasPrefix("s5l8960") || identifier.hasPrefix("s5l8965"))
+    {
+      return ("A7", nil)
+    }
+    
+    if (identifier.hasPrefix("t7000"))
+    {
+      return ("A8", nil)
+    }
+    
+    if (identifier.hasPrefix("t7001"))
+    {
+      return ("A8X", nil)
+    }
+    
+    if (identifier.hasPrefix("s5l8950"))
+    {
+      return ("A6", nil)
+    }
+    
+    if (identifier.hasPrefix("s5L8955"))
+    {
+      return ("A6X", nil)
+    }
+    
+    if (identifier.hasPrefix("s5l8940") || identifier.hasPrefix("s5l8942"))
+    {
+      return ("A5", nil)
+    }
+    
+    if (identifier.hasPrefix("s5l8945"))
+    {
+      return ("A5X", nil)
+    }
+    
+    if (identifier.hasPrefix("s5l8930"))
+    {
+      return ("A4", nil)
+    }
+    
+    return (nil, nil)
+  }
+  
   // MARK: - Private
 
   private typealias MGCopyAnswer = (@convention(c) (CFStringRef) -> CFStringRef)
