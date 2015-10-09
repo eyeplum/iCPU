@@ -22,7 +22,7 @@ let copyAnswerFunction = unsafeBitCast(copyAnswerSymbol, MGCopyAnswer.self)
 let result = copyAnswerFunction("HardwarePlatform") as String
 ```
 
-Though I have scratch my head for a few hours until I've found the `@convention(c)` keyword in the [Documents](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/InteractingWithCAPIs.html), the example shows that it is very clean and easy to use C function pointers in Swift 2.0.
+Though I have scratched my head for a few hours until I've found the `@convention(c)` keyword in the [Documents](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/InteractingWithCAPIs.html), the example shows that it is very clean and easy to use C function pointers in Swift 2.0.
 
 ## Build
 
